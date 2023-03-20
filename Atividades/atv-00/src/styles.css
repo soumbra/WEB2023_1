@@ -1,0 +1,21 @@
+* {
+  margin: 0px;
+}
+
+.App {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: white;
+  margin: auto;
+  margin-top: 10px;
+  width: auto;
+  max-width: 1000px;
+  padding: 5px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
+}
+
+body {
+  background-color: lightblue;
+}
+
