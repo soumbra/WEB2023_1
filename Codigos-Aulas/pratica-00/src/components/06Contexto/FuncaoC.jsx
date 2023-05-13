@@ -1,9 +1,13 @@
+import { useContext } from "react";
 import FuncaoD from "./FuncaoD"
+import CorContexto from "./MeuContexto";
 
-const FuncaoC = ({cor}) => {
+const FuncaoC = () => {
+    const {cor2} = useContext(CorContexto)
+
     return (
         <div>
-            <h1>Função C</h1>
+            <h1 style={{backgroundColor:cor2}}>Função C</h1>
             <FuncaoD />
         </div>
     )

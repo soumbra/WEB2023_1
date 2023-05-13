@@ -1,15 +1,20 @@
 import FuncaoB from  "./FuncaoB"
 import FuncaoC from  "./FuncaoC"
 
+import CorContexto from "./MeuContexto";
+
 const FuncaoA = () => {
 
     const cor = "red";
+
     return (
-        <div>
-            <h1>Função A</h1>
-            <FuncaoB />
-            <FuncaoC />
-        </div>
+        <CorContexto.Provider value = {{cor:cor, nome:"Jarpa", cor2:"blue"}}>
+            <div>
+                <h1 style={{ backgroundColor: cor }}>Função A</h1>
+                <FuncaoB />
+                <FuncaoC />
+            </div>
+        </CorContexto.Provider>
     )
 }
 
