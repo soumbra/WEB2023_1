@@ -33,19 +33,30 @@ const MinhaPromise = () => {
             .then((response)=>console.log(response))
             .catch((error)=>console.log(error))*/
             meuGet("http:...")
-            .then(
-                (response) => {
-                    console.log(response.numero)
-                    console.log(response.msg)
-                }
+                .then(
+                    (response) => {
+                        console.log(response.numero)
+                        console.log(response.msg)
+                    }
 
-            )
-            .catch(
-                (error) => {
-                    console.log(error.numero)
-                    console.log(error.msg)
-                }
-            )
+                )
+                .catch(
+                    (error) => {
+                        console.log(error.numero)
+                        console.log(error.msg)
+                    }
+                )
+                //.finally(
+                    //()=>{
+                        // console.log(error.msg)
+                    //}
+                //)
+                /*Ideia basica do fetch
+                    fetch(.com)
+                    .then((responde) => response.json())
+                    .then((data) = console.table(data))
+                    .catch((error) => console.log(error))
+                */
 
         }
         ,
