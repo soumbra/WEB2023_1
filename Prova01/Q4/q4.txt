@@ -1,0 +1,5 @@
+Props drilling é um problema de quando precisamos de dados que estao espalhados em várias camadas, se temos muitos componentes isso pode se tornar um problema. Utilizando contexto resolvemos esse problemas pois agora teremos um provedor e um consumidor, sendo assim usando o use context facilita o uso.
+
+Exemplo:
+Eu tenho um componente pai que passa para um componente filho 3 propriedades, o filho irá passar para neto 2 propriedades do diferentes. O neto gostaria de usar uma propriedade do pai porém para isso teria que ser passado via props.
+Usando contexto iremos criar um contexto, o componente pai ira prover essas 3 caracteristicas e o neto pegará elas usando o UseContext;
